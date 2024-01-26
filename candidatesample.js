@@ -21,7 +21,7 @@ let candidateAnswers = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  candidateName = input.question("Enter your name: ");
+  candidateName = input.question("What is your name? ");
 }
 
 function askQuestion() {
@@ -38,15 +38,6 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  if (candidateAnswer.toLowerCase()==correctAnswer.toLowerCase()){
-    console.log("That's correct answer!!");
- }
- else{
-   console.log("Wrong Answer!!" + "The correct answer is "  + correctAnswer);
- }
-
-
-
   let correctCount = 0;
   for (i=0;i < candidateAnswers.length;i++){
     if (candidateAnswers[i].toLowerCase()==correctAnswers[i].toLowerCase()){
